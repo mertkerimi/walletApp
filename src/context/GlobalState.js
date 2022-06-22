@@ -4,11 +4,11 @@ import AppReducer from './AppReducer';
 
 const initialState = {
     transactions: [
-        { id: 1, text: 'Çiçek', amount: -20 },
-        { id: 2, text: 'Maaş', amount: 10000 },
-        { id: 3, text: 'Kitap', amount: -10 },
-        { id: 4, text: 'Kamera', amount: 150 },
-        { id: 5, text: 'Telefon', amount: 150 },
+        { id: 1, text: 'Çiçek', amount: -70 },
+        { id: 3, text: 'Kitap', amount: -25 },
+        { id: 4, text: 'Kamera', amount: -3350 },
+        { id: 5, text: 'Telefon', amount: -17150 },
+        { id: 2, text: 'Maaş', amount: 30000 },
 
 
 
