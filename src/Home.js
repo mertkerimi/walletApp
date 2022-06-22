@@ -14,7 +14,9 @@ function Home() {
       <div className="balance">
         <Balance />
         <IncomeExpenses />
+        <div className='add-transaction'>
         <AddTransaction />
+        </div>
         <div className='history'>
           <TransactionList />
         </div>

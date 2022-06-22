@@ -18,18 +18,24 @@ body{
 }
 
 .header{
-  margin: 100px;
+  margin: 90px;
   margin-left: 800px;
+  margin-bottom: 100px;
 }
 .balance {
-  margin: 100px;
-  margin-left: 300px;
+  margin-top: 100px;
+  margin-left: 650px;
   width: 500px;
 
 }
+.add-transaction{
+  margin-top: 50px;
+  margin-left: -350px;
+  width: 500px;
+}
 .history {
-  margin-top: -480px;
-  margin-left: 800px;
+  margin-top: -335px;
+  margin-left: 350px;
   width: 500px;
 }
 
@@ -58,6 +64,7 @@ h4 {
   background-color: #fff;
   box-shadow: var(--box-shadow);
   padding: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
@@ -69,7 +76,7 @@ h4 {
 }
 
 .inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+  border-right: 2px solid #dedede;
 }
 
 .money {
@@ -94,7 +101,7 @@ label {
 input[type='text'],
 input[type='number'] {
   border: 1px solid #dedede;
-  border-radius: 2px;
+  border-radius: 10px;
   display: block;
   font-size: 16px;
   padding: 10px;
@@ -103,7 +110,8 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  border-radius: 10px;
+  background-color: #527ccc;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -122,6 +130,7 @@ input[type='number'] {
 .list {
   list-style-type: none;
   padding: 0;
+
   margin-bottom: 40px;
 }
 
@@ -130,6 +139,7 @@ input[type='number'] {
   box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
+  border-radius: 10px;
   justify-content: space-between;
   position: relative;
   padding: 10px;
@@ -162,4 +172,63 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+/* signIn */
+.app {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background-color: #f8f9fd;
+}
+input[type="signInText"]{
+  margin-top: 10px;
+  border: 2px solid #dedede;
+  border-radius: 10px;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.signIn-password{
+  margin-top: 10px;
+  border: 2px solid #dedede;
+  border-radius: 10px;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.btnSignIn{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #527ccc;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 20px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+.login-form{
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.label-signIn{
+  font-size: 20px;
+  padding: 40px;
+  margin-left: 80px;
+}
+.label-mert{
+  font-size: 13px;
+  padding: 100px;
+  margin-bottom: -1000px;
+
 }
