@@ -24,7 +24,7 @@ export const AddTransaction = () => {
         </div>
         <div className="form-control">
           <label htmlFor="amount">Miktar <br />
-          (Pozitif Değer - Gelir) <br /> (Negatif Değer - Gider)
+          (Pozitif Değer (+) - Gelir) <br /> (Negatif Değer (-) - Gider)
           </label>
           <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Girmek istediğiniz tutarı giriniz." />
         </div>

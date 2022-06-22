@@ -1,27 +1,17 @@
+import { Route, Switch,BrowserRouter } from 'react-router-dom';
 import './App.css';
-import { Header } from './components/Header'
-import { Balance } from './components/Balance'
-import { IncomeExpenses } from './components/IncomeExpenses'
-import { TransactionList } from './components/TransactionList'
-import { AddTransaction } from './components/AddTransaction'
-import { GlobalProvider } from './context/GlobalState'
+import Home from "./Home";
+import SignIn from './components/SignIn';
 function App() {
   return (
-    <GlobalProvider>
-      <div className='header' >
-      <Header />
-      </div>
-
-      <div className="balance">
-        <Balance />
-        <IncomeExpenses />
-        <AddTransaction />
-        <div className='history'>
-          <TransactionList />
-        </div>
-      </div>
-
-    </GlobalProvider>
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={SignIn} />
+          <Route path="/home" exact component={Home} />
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 
